@@ -1,3 +1,5 @@
+import { Theme } from '@radix-ui/themes'
+import '@radix-ui/themes/styles.css'
 import type { Metadata } from 'next'
 import localFont from 'next/font/local'
 import './globals.css'
@@ -26,7 +28,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        <main>{children}</main>
+        <Theme>
+          <main>{children}</main>
+        </Theme>
       </body>
     </html>
   )

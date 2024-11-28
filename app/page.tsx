@@ -11,11 +11,13 @@ export default function Home() {
     <div className=" h-screen overflow-y-scroll snap-y snap-mandatory  ">
       {/* <div className=" items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]"> */}
       <SectionBox bg="bg_barber">
-        <div className="flex flex-col opacity-90 bg-slate-300 w-full  sm:rounded-xl p-8 text-black ">
+        <div className="flex flex-col opacity-90 bg-slate-300 w-full   sm:rounded-xl p-8 text-black sm:w-4/5 ">
+          {/* <Container> */}
           <h2>Great friendly family barber shop</h2>
           <h3>by professional staff for all styles</h3>
           <h4>Hair cuts, Shape-Ups, razo shave & hot towel, beard trim</h4>
           <h5>No appointment needed, just pop in</h5>
+          {/* </Container> */}
         </div>
         <DownPulse />
       </SectionBox>
