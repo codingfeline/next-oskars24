@@ -9,6 +9,7 @@ import ImageSlider from './ImageSlider'
 const IMAGES = [img1, img2, img3, img4, img5]
 
 const ImageSliderBox = () => {
+  console.log('images', IMAGES)
   return (
     <section className="flex_center h-screen  w-full snap-start bg_photos flex-col ">
       {/* <a name="photos"></a> */}

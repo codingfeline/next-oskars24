@@ -1,12 +1,12 @@
 'use client'
 
-import Image from 'next/image'
+import Image, { StaticImageData } from 'next/image'
 import { useState } from 'react'
 import { BsDiamond, BsDiamondFill } from 'react-icons/bs'
 import { MdArrowCircleLeft, MdArrowCircleRight } from 'react-icons/md'
 
 interface Prop {
-  imageUrls: string[]
+  imageUrls: string[] | StaticImageData[]
 }
 
 const ImageSlider = ({ imageUrls }: Prop) => {
