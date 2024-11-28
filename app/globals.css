@@ -17,5 +17,120 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  /* font-family: Arial, Helvetica, sans-serif; */
+}
+
+/* @layer base {
+  [type='text'],
+  [type='submit'],
+  [type='email'],
+  [type='url'],
+  [type='password'],
+  [type='number'],
+  [type='date'],
+  [type='datetime-local'],
+  [type='month'],
+  [type='search'],
+  [type='tel'],
+  [type='time'],
+  [type='week'],
+  [multiple],
+  button,
+  textarea,
+  select {
+    @apply w-full border-gray-300 rounded-lg shadow-sm focus:border-indigo-500 focus:ring-indigo-500 bg-slate-200 mt-1;
+  }
+  button {
+    @apply p-2 hover:bg-red-200 transition-colors;
+  }
+  [type='checkbox'],
+  [type='radio'] {
+    @apply rounded border-gray-300 text-indigo-500 focus:ring-indigo-500 mr-2;
+  }
+  [type='submit'] {
+    @apply cursor-pointer hover:bg-slate-300 p-2;
+  }
+} */
+form {
+  @apply mt-2;
+}
+form div {
+  @apply mb-3;
+}
+label span {
+  @apply text-red-400 float-right pr-2 italic;
+}
+h6 {
+  @apply text-lg;
+}
+h5 {
+  @apply text-xl;
+}
+h4 {
+  @apply text-2xl;
+}
+h3 {
+  @apply text-3xl;
+}
+h2 {
+  @apply text-4xl;
+}
+h1 {
+  @apply text-5xl;
+}
+
+.nav-li {
+  @apply bg-blue-200 w-full block;
+}
+.nav-a {
+  @apply p-4 px-2 block text-center;
+}
+.flex_screen {
+  @apply flex flex-col mb-auto;
+}
+.flex_center {
+  @apply flex justify-center items-center grow;
+}
+/* svg {
+  @apply text-5xl text-slate-500;
+} */
+.one {
+  @apply flex flex-col grow justify-between;
+}
+
+.bg_barber {
+  background: url('/barber-warm.jpg');
+  @apply bg-cover bg-left-top;
+}
+.bg_clock {
+  background: url('/clock.jpg');
+  @apply bg-cover bg-center;
+}
+.bg_savings {
+  background: url('/savings.jpg');
+  @apply bg-cover bg-center;
+}
+.bg_photos {
+  /* background: url('/barber-pole.webp'); */
+  @apply bg-cover bg-center bg-black;
+}
+
+.imgSlider button {
+  @apply block absolute top-0 bottom-0 p-1 hover:bg-gray-700 transition delay-100 opacity-60;
+
+  & > * {
+    @apply fill-white stroke-black w-8 h-8;
+  }
+}
+
+.imgSlider img {
+  transition: translate 300ms ease-in-out;
+}
+.diamonds {
+  span {
+    @apply text-gray-500;
+    > .empty {
+      @apply cursor-pointer hover:text-white transition delay-75;
+    }
+  }
 }
