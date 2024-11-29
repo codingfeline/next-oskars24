@@ -1,13 +1,12 @@
 import PostalAddress from './Address'
 import AppFooter from './AppFooter'
-import { Up3 } from './icons'
 
 const Location = () => {
   return (
     <>
-      <div className="bg-black mt-20 rounded-full">
+      {/* <div className="bg-black mt-20 rounded-full">
         <Up3 fill="black" stroke="white" className="text-4xl animate-bounce " />
-      </div>
+      </div> */}
 
       <PostalAddress />
       <iframe

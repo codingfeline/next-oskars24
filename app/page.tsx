@@ -1,9 +1,7 @@
 import OpeningHours from '@/app/components/Hours'
 import Prices from '@/app/components/Prices'
-import DownPulse from './components/DownPulse'
 import Location from './components/Location'
 import SectionBox from './components/SectionBox'
-import UpPulse from './components/UpPulse'
 import ImageSliderBox from './components/imageSliderBox'
 
 export default function Home() {
@@ -17,21 +15,22 @@ export default function Home() {
           <h3>by professional staff for all styles</h3>
           <h4>Hair cuts, Shape-Ups, razo shave & hot towel, beard trim</h4>
           <h5>No appointment needed, just pop in</h5>
+
           {/* </Container> */}
         </div>
-        <DownPulse />
+        {/* <DownPulse /> */}
       </SectionBox>
 
       <SectionBox bg="bg_clock">
-        <UpPulse />
+        {/* <UpPulse /> */}
         <OpeningHours />
-        <DownPulse />
+        {/* <DownPulse /> */}
       </SectionBox>
 
       <SectionBox bg="bg_savings">
-        <UpPulse />
+        {/* <UpPulse /> */}
         <Prices />
-        <DownPulse />
+        {/* <DownPulse /> */}
       </SectionBox>
 
       <ImageSliderBox />
