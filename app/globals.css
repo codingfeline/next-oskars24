@@ -116,7 +116,7 @@ h1 {
 }
 
 .imgSlider button {
-  @apply block absolute top-0 bottom-0 p-1 hover:bg-gray-700 transition delay-100 opacity-60;
+  @apply block absolute top-0 bottom-0 p-1 bg-gray-700 hover:bg-gray-900 transition delay-100 opacity-60;
 
   & > * {
     @apply fill-white stroke-black w-8 h-8;
