@@ -4,8 +4,8 @@ const Prices = async () => {
   const prices = await prisma.prices.findMany()
 
   return (
-    <div className="w-full sm:w-[400px] bg-[#6b451f] opacity-85 p-3 rounded-lg">
-      <ul className="flex flex-col items-center text-white text-xl">
+    <div className="w-full lg:w-3/4 bg-[#F6C090] opacity-85 p-3 lg:rounded-lg ">
+      <ul className="flex flex-col items-center text-xl">
         {prices.map(price => (
           <li key={price.id}>
             {price.item} <span>&pound; {price.price}</span>
