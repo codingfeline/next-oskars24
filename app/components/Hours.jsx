@@ -65,7 +65,6 @@ const OpeningHours = async () => {
             </time>
           )
         })}
-        {JSON.stringify(hours)}
       </div>
     </>
   )
