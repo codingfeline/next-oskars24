@@ -46,7 +46,7 @@ const ImageSlider = ({ imageUrls }: Prop) => {
 
   return (
     <div className="flex justify-center items-center h-screen flex-col bg-black w-full">
-      <div className="imgSlider aspect-video relative w-full h-3/5 ">
+      <div className="imgSlider aspect-video relative w-full h-4/5 ">
         <div className="w-full h-full flex overflow-hidden" id="touchable">
           {imageUrls.map((url, index) => (
             <Image
