@@ -12,7 +12,8 @@ const geistSans = localFont({
 
 export const metadata: Metadata = {
   title: 'Oskars Barber',
-  description: 'Barbers for men in the high street of Herne Bay in Kent.',
+  description:
+    'Great friendly family barbershop. Barber in the high street of Herne Bay in Kent.',
 }
 
 export default function RootLayout({
