@@ -8,7 +8,7 @@ interface Prop {
 const SectionBox = ({ bg, children }: Prop) => {
   return (
     <section
-      className={`flex_center h-screen  w-full snap-start bg_photos flex-col ${bg}`}
+      className={`flex justify-center items-center h-screen  w-full snap-start bg_photos flex-col ${bg}`}
     >
       {children}
     </section>

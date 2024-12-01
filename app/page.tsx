@@ -1,5 +1,7 @@
 import OpeningHours from '@/app/components/Hours'
 import Prices from '@/app/components/Prices'
+import bg from '@/public/oskars_banner.jpg'
+import Image from 'next/image'
 import Location from './components/Location'
 import SectionBox from './components/SectionBox'
 import ImageSliderBox from './components/imageSliderBox'
@@ -7,8 +9,10 @@ import ImageSliderBox from './components/imageSliderBox'
 export default function Home() {
   return (
     <div className=" h-screen overflow-y-scroll snap-y snap-mandatory  ">
-      {/* <div className=" items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]"> */}
+      {/* <div className="flex flex-col bg_barber font-[family-name:var(--font-geist-sans)]"> */}
       <SectionBox bg="bg_barber">
+        <Image src={bg} alt="banner" className="w-5/6 rounded-full mb-12 -mt-12" />
+        {/* <div className="h-12 bg-white w-3/4"></div> */}
         <div className="flex flex-col opacity-90 bg-slate-300 w-full   sm:rounded-xl p-8 text-black sm:w-4/5 ">
           {/* <Container> */}
           <h2>Great friendly family barber shop</h2>
@@ -20,6 +24,7 @@ export default function Home() {
         </div>
         {/* <DownPulse /> */}
       </SectionBox>
+      {/* </div> */}
 
       <SectionBox bg="bg_clock">
         {/* <UpPulse /> */}

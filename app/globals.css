@@ -99,8 +99,8 @@ h1 {
 }
 
 .bg_barber {
-  background: url('/barber-warm.jpg');
-  @apply bg-cover bg-left-top;
+  background: url('/barbers_bg.jpg');
+  @apply bg-cover bg-center;
 }
 .bg_clock {
   background: url('/clock.jpg');

@@ -1,16 +1,6 @@
 import prisma from '@/prisma/client'
 
-async function getHours() {
-  const res = await fetch('https://oskarsbarbers4men.co.uk/indexAPI_hours.php')
-  if (!res.ok) {
-    // This will activate the closest `error.js` Error Boundary
-    throw new Error('Failed to fetch data')
-  }
-
-  return res.json()
-}
 const OpeningHours = async () => {
-  // const hours = await getHours()
   const hours = await prisma.hours.findMany()
 
   const map = {
