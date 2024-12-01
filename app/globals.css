@@ -114,6 +114,9 @@ h1 {
   /* background: url('/barber-pole.webp'); */
   @apply bg-cover bg-center bg-black;
 }
+.bg_location {
+  @apply bg-[#0a0a0a];
+}
 
 .imgSlider button {
   @apply block absolute top-0 bottom-0 p-1 bg-gray-700 hover:bg-gray-900 transition delay-100 opacity-60;

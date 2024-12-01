@@ -40,7 +40,7 @@ export default function Home() {
 
       <ImageSliderBox />
 
-      <SectionBox>
+      <SectionBox bg="bg_location">
         <Location />
       </SectionBox>
     </div>
