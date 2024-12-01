@@ -21,8 +21,8 @@ model Prices {
 
 model Hours {
   id       String @id @default(auto()) @map("_id") @db.ObjectId
-  start    String
-  end      String
+  start    Int
+  end      Int
   day      String
   day_code String
 }
