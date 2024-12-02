@@ -23,6 +23,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <link rel="icon" href="/favicon.png" sizes="any" />
       <body className={`${geistSans.className}  antialiased`}>
         <Theme accentColor="blue">
           <main>{children}</main>
